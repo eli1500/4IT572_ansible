@@ -8,7 +8,7 @@
         instance_type: t2.medium
         image_id: ami-04e5276ebb8451442
         region: us-east-1
-        key_name: devops
+        key_name: newKey
         vpc_subnet_id: subnet-058d48f8f4b09398e
         tags:
           Name: Eshop
@@ -57,7 +57,7 @@
 
     - name: Fetch eshop from Git
       git:
-        repo: "https://github.com/eli1500/devops.git"
+        repo: "https://github.com/eli1500/4IT572_ansible.git"
         dest: ./app
 
     - name: Build Eshop Docker image
