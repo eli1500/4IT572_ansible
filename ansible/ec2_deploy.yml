@@ -57,7 +57,7 @@
 
     - name: Fetch eshop from Git
       git:
-        repo: "https://github.com/eli1500/4IT572_ansible.git"
+        repo: "https://github.com/eli1500/devops.git"
         dest: ./app
 
     - name: Build Eshop Docker image
